@@ -7,56 +7,55 @@
     {
      "name": "Bovine",
      "children": [
-      {"name": "Canada", "value": 1311},
-      {"name": "Mexico", "value": 1121}
+        {"name": "Canada", "value": 1311},
+        {"name": "Mexico", "value": 1122}
      ]
     },
     {
-     "name": "graph",
+     "name": "Swine",
      "children": [
-      {"name": "BetweennessCentrality", "value": 3534},
-      {"name": "LinkDistance", "value": 5731},
-      {"name": "MaxFlowMinCut", "value": 7840},
-      {"name": "ShortestPaths", "value": 5914},
-      {"name": "SpanningTree", "value": 3416}
+        {"name": "Canada", "value": 463}
      ]
     },
     {
-     "name": "optimization",
+     "name": "Sheep and Goats",
      "children": [
-      {"name": "AspectRatioBanker", "value": 7074}
+        {"name": "Canada", "value": 1}
      ]
-    }
+    },
+    {
+        "name": "Poultry",
+        "children": [
+            {"name": "Canada", "value": 43}
+        ]
+       },
+       {
+        "name": "Eggs",
+        "children": [
+            {"name": "Canada", "value": 54},
+            {"name": "United Kingdom", "value": 17},
+            {"name": "Netherlands", "value": 15},
+            {"name": "China", "value": 8},
+            {"name": "Thailand", "value": 7},
+            {"name": "Turkey", "value": 5},
+            {"name": "Taiwan", "value": 4},
+            {"name": "Rest of world", "value": 19}
+        ]
+       }
    ]
   },
   {
-   "name": "animate",
+   "name": "Food",
    "children": [
-    {"name": "Easing", "value": 17010},
-    {"name": "FunctionSequence", "value": 5842},
+    {"name": "Sub-Food 1", "value": 17010},
+    {"name": "Sub-Food 2", "value": 5842},
     {
-     "name": "interpolate",
+     "name": "Sub-Food 3",
      "children": [
-      {"name": "ArrayInterpolator", "value": 1983},
-      {"name": "ColorInterpolator", "value": 2047},
-      {"name": "DateInterpolator", "value": 1375},
-      {"name": "Interpolator", "value": 8746},
-      {"name": "MatrixInterpolator", "value": 2202},
-      {"name": "NumberInterpolator", "value": 1382},
-      {"name": "ObjectInterpolator", "value": 1629},
-      {"name": "PointInterpolator", "value": 1675},
-      {"name": "RectangleInterpolator", "value": 2042}
+      {"name": "Country 1", "value": 1983},
+      {"name": "Country 2", "value": 2047}
      ]
-    },
-    {"name": "ISchedulable", "value": 1041},
-    {"name": "Parallel", "value": 5176},
-    {"name": "Pause", "value": 449},
-    {"name": "Scheduler", "value": 5593},
-    {"name": "Sequence", "value": 5534},
-    {"name": "Transition", "value": 9201},
-    {"name": "Transitioner", "value": 19975},
-    {"name": "TransitionEvent", "value": 1116},
-    {"name": "Tween", "value": 6006}
+    }
    ]
   }
  ]
