@@ -6,7 +6,7 @@
 
     onMount(async function() {
             //grab json data
-		let data = await d3.json('https://raw.githubusercontent.com/ntd002/DSC_209_Final_Project/refs/heads/main/static/flare-2.json');
+		let data = await d3.json('https://raw.githubusercontent.com/ntd002/DSC_209_Final_Project/refs/heads/main/static/food-imports.json');
 		
 		let chart = Sunburst(data, {
 			value: d => d.value, // size of each node (file); null for internal nodes (folders)

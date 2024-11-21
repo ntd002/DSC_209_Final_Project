@@ -1,16 +1,14 @@
 {
- "name": "flare",
+ "name": "Imports",
  "children": [
   {
-   "name": "analytics",
+   "name": "Animals",
    "children": [
     {
-     "name": "cluster",
+     "name": "Bovine",
      "children": [
-      {"name": "AgglomerativeCluster", "value": 3938},
-      {"name": "CommunityStructure", "value": 3812},
-      {"name": "HierarchicalCluster", "value": 6714},
-      {"name": "MergeEdge", "value": 743}
+      {"name": "Canada", "value": 1311.1},
+      {"name": "Mexico", "value": 1121.9}
      ]
     },
     {
