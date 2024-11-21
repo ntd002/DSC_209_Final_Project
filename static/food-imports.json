@@ -45,16 +45,59 @@
    ]
   },
   {
-   "name": "Food",
+   "name": "Beverages",
    "children": [
-    {"name": "Sub-Food 1", "value": 17010},
-    {"name": "Sub-Food 2", "value": 5842},
     {
-     "name": "Sub-Food 3",
+     "name": "Wine",
      "children": [
-      {"name": "Country 1", "value": 1983},
-      {"name": "Country 2", "value": 2047}
+        {"name": "France", "value": 2474},
+        {"name": "Italy", "value": 2254},
+        {"name": "New Zealand", "value": 596},
+        {"name": "Spain", "value": 382},
+        {"name": "Australia", "value": 270},
+        {"name": "Argentina", "value": 200},
+        {"name": "Canada", "value": 196},
+        {"name": "Rest of world", "value": 729}
      ]
+    },
+    {
+    "name": "Malt Beer",
+    "children": [
+        {"name": "Mexico", "value": 5683},
+        {"name": "Netherlands", "value": 622},
+        {"name": "Ireland", "value": 154},
+        {"name": "Canada", "value": 105},
+        {"name": "Germany", "value": 71},
+        {"name": "Belgium", "value": 41},
+        {"name": "Italy", "value": 30},
+        {"name": "Rest of world", "value": 133}
+    ]
+    },
+    {
+    "name": "Nonalcoholic beverages",
+    "children": [
+        {"name": "Mexico", "value": 1002},
+        {"name": "Canada", "value": 515},
+        {"name": "Italy", "value": 459},
+        {"name": "Austria", "value": 349},
+        {"name": "Switzerland", "value": 280},
+        {"name": "France", "value": 260},
+        {"name": "Rest of world", "value": 1107}
+    ]
+    },
+    {
+    "name": "Liquors and Liquers",
+    "children": [
+        {"name": "Mexico", "value": 4742},
+        {"name": "France", "value": 1946},
+        {"name": "United Kingdom", "value": 1662},
+        {"name": "Canada", "value": 537},
+        {"name": "Netherlands", "value": 365},
+        {"name": "Ireland", "value": 265},
+        {"name": "Italy", "value": 242},
+        {"name": "Sweden", "value": 138},
+        {"name": "Rest of world", "value": 780}
+    ]
     }
    ]
   }

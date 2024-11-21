@@ -92,6 +92,8 @@
         path.append("title")
             .text(d => `${d.ancestors().map(d => d.data.name).reverse().join("/")}\n${format(d.value)}`);
 
+
+
         const label = svg.append("g")
             .attr("pointer-events", "none")
             .attr("text-anchor", "middle")
@@ -102,7 +104,9 @@
             .attr("dy", "0.35em")
             .attr("fill-opacity", d => +labelVisible(d.current))
             .attr("transform", d => labelTransform(d.current))
-            .text(d => d.data.name);
+            .text(d => d.data.name + 
+
+            (typeof d.data.value==='undefined' ? '' : ": "+ d.data.value +"mil"));
 
         const parent = svg.append("circle")
             .datum(root)
