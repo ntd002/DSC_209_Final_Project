@@ -106,7 +106,7 @@
             .attr("transform", d => labelTransform(d.current))
             .text(d => d.data.name + 
 
-            (typeof d.data.value==='undefined' ? '' : ": "+ d.data.value +"mil"));
+            (typeof d.data.value==='undefined' ? '' : ": $"+ d.data.value +"m"));
 
         const parent = svg.append("circle")
             .datum(root)
