@@ -7,8 +7,8 @@
     {
      "name": "Bovine",
      "children": [
-      {"name": "Canada", "value": 1311.1},
-      {"name": "Mexico", "value": 1121.9}
+      {"name": "Canada", "value": 1311},
+      {"name": "Mexico", "value": 1121}
      ]
     },
     {
