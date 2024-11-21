@@ -74,7 +74,7 @@
     ]
     },
     {
-    "name": "Nonalcoholic beverages",
+    "name": "Nonalcoholic Beverages",
     "children": [
         {"name": "Mexico", "value": 1002},
         {"name": "Canada", "value": 515},
@@ -100,6 +100,51 @@
     ]
     }
    ]
-  }
+  },
+  {
+    "name": "Chocolate",
+    "children": [
+     {
+      "name": "Cocoa Beans",
+      "children": [
+        {"name": "Cote d'Ivoire", "value": 361},
+        {"name": "Ecuador", "value": 171},
+        {"name": "Ghana", "value": 147},
+        {"name": "Dominican Republic", "value": 40},
+        {"name": "Papua New Guinea", "value": 25},
+        {"name": "Nigeria", "value": 10},
+        {"name": "Rest of world", "value": 16}
+      ]
+     },
+     {
+      "name": "Cocoa Paste, Butter, and Powder",
+      "children": [
+        {"name": "Cote d'Ivoire", "value": 300},
+        {"name": "Indonesia", "value": 231},
+        {"name": "Malaysia", "value": 215},
+        {"name": "Netherlands", "value": 207},
+        {"name": "Ghana", "value": 118},
+        {"name": "Ecuador", "value": 65},
+        {"name": "Canada", "value": 55},
+        {"name": "Spain", "value": 39},
+        {"name": "Rest of world", "value": 225}
+      ]
+     },
+     {
+        "name": "Chocolate",
+        "children": [
+            {"name": "Canada", "value": 1977},
+            {"name": "Mexico", "value": 598},
+            {"name": "Belgium", "value": 204},
+            {"name": "Germany", "value": 186},
+            {"name": "Poland", "value": 141},
+            {"name": "Italy", "value": 97},
+            {"name": "Switzerland", "value": 91},
+            {"name": "Croatia", "value": 66},
+            {"name": "Rest of world", "value": 570}
+        ]
+       }
+    ]
+   }
  ]
 }
