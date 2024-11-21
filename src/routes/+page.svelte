@@ -1,2 +1,15 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+    import Sunburst from './Sunburst.svelte';
+</script>
+
+<main>
+<h1>Zoomable Sunburst Chart</h1>
+<Sunburst />
+</main>
+
+<style>
+    main {
+        text-align: center;
+        padding: 20px;
+    }
+</style>
