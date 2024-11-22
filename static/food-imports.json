@@ -660,6 +660,70 @@
       ]
      }
     ]
+   },
+   {
+    "name": "Vegetable Oil and Oilseeds",
+    "children": [
+     {
+      "name": "Crude Vegetable Oils",
+      "children": [
+        {"name": "Canada", "value": 1291},
+        {"name": "Philippines", "value": 150},
+        {"name": "Argentina", "value": 52},
+        {"name": "Mexico", "value": 47},
+        {"name": "Indonesia", "value": 32},
+        {"name": "Spain", "value": 24},
+        {"name": "Rest of world", "value": 87}
+      ]
+     },
+     {
+      "name": "Refined Vegetable Oils",
+      "children": [
+        {"name": "Canada", "value": 3768},
+        {"name": "Indonesia", "value": 2103},
+        {"name": "Italy", "value": 803},
+        {"name": "Spain", "value": 786},
+        {"name": "Mexico", "value": 341},
+        {"name": "Turkey", "value": 278},
+        {"name": "Rest of world", "value": 1590}
+      ]
+     },
+     {
+        "name": "Olive Oil",
+        "children": [
+            {"name": "Italy", "value": 707},
+            {"name": "Spain", "value": 706},
+            {"name": "Tunisia", "value": 216},
+            {"name": "Turkey", "value": 213},
+            {"name": "Greece", "value": 101},
+            {"name": "Rest of world", "value": 230}
+      ]
+     },
+     {
+        "name": "Tropical Oils",
+        "children": [
+            {"name": "Indonesia", "value": 2134},
+            {"name": "Philippines", "value": 360},
+            {"name": "Malaysia", "value": 259},
+            {"name": "Colombia", "value": 49},
+            {"name": "Sri Lanka", "value": 25},
+            {"name": "Mexico", "value": 17},
+            {"name": "Rest of world", "value": 78}
+      ]
+     },
+     {
+        "name": "Oilseeds",
+        "children": [
+            {"name": "Canada", "value": 460},
+            {"name": "Brazil", "value": 217},
+            {"name": "Argentina", "value": 125},
+            {"name": "Chile", "value": 81},
+            {"name": "India", "value": 64},
+            {"name": "Bulgaria", "value": 60},
+            {"name": "Rest of world", "value": 377}
+      ]
+     }
+    ]
    }
  ]
 }
