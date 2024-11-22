@@ -101,7 +101,7 @@
             .selectAll("text")
             .data(root.descendants().slice(1))
             .join("text")
-            .attr("dy", "0.35em")
+            .attr("dy", "0.3em")
             .attr("fill-opacity", d => +labelVisible(d.current))
             .attr("transform", d => labelTransform(d.current))
             .text(d => d.data.name + 
