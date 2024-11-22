@@ -564,6 +564,50 @@
       ]
      }
     ]
+   },
+   {
+    "name": "Sweets",
+    "children": [
+     {
+      "name": "Sugar, Cane and Beet",
+      "children": [
+        {"name": "Mexico", "value": 805},
+        {"name": "Brazil", "value": 505},
+        {"name": "Guatemala", "value": 215},
+        {"name": "El Salvador", "value": 158},
+        {"name": "Colombia", "value": 155},
+        {"name": "Dominican Republic", "value": 139},
+        {"name": "Australia", "value": 95},
+        {"name": "Rest of world", "value": 537}
+      ]
+     },
+     {
+      "name": "Other Sweeteners and Syrups",
+      "children": [
+        {"name": "Canada", "value": 415},
+        {"name": "Mexico", "value": 181},
+        {"name": "India", "value": 162},
+        {"name": "Argentina", "value": 128},
+        {"name": "Brazil", "value": 77},
+        {"name": "New Zealand", "value": 52},
+        {"name": "Rest of world", "value": 429}
+      ]
+     },
+     {
+        "name": "Confections",
+        "children": [
+            {"name": "Mexico", "value": 1176},
+            {"name": "Canada", "value": 615},
+            {"name": "Germany", "value": 264},
+            {"name": "Turkey", "value": 210},
+            {"name": "Spain", "value": 145},
+            {"name": "China ", "value": 134},
+            {"name": "Switzerland", "value": 77},
+            {"name": "Thailand", "value": 65},
+            {"name": "Rest of world", "value": 456}
+      ]
+     }
+    ]
    }
  ]
 }
