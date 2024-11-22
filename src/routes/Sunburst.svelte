@@ -3,6 +3,8 @@
 	import * as d3 from 'd3';
 
 	let element;
+    let lastCategory = "Imports";
+    let lastSource = "";
 
     onMount(async function() {
             //grab json data
@@ -12,7 +14,7 @@
 			value: d => d.value, // size of each node (file); null for internal nodes (folders)
 			label: d => d.name, // display name for each cell
 			title: (d, n) => `${n.ancestors().reverse().map(d => d.data.name).join(".")}\n${n.value.toLocaleString("en")}`, // hover text
-			width: 1152,
+            width: 1152,
 			height: 1152
 		});
 		
@@ -88,9 +90,9 @@
             .style("cursor", "pointer")
             .on("click", clicked);
 
-        const format = d3.format(",d");
+        //const format = d3.format(",d");
         path.append("title")
-            .text(d => `${d.ancestors().map(d => d.data.name).reverse().join("/")}\n${format(d.value)}`);
+            .text(d => `${d.ancestors().map(d => d.data.name).reverse().join("/")}\n${dataValueToMoney(d.value)}`);
 
 
 
@@ -106,7 +108,7 @@
             .attr("transform", d => labelTransform(d.current))
             .text(d => d.data.name + 
 
-            (typeof d.data.value==='undefined' ? '' : ": $"+ d.data.value +"m"));
+            (typeof d.data.value==='undefined' ? '' : ": "+ dataValueToMoney(d.data.value)));
 
         const parent = svg.append("circle")
             .datum(root)
@@ -168,11 +170,16 @@
             return `rotate(${x - 90}) translate(${y},0) rotate(${x < 180 ? 0 : 180})`;
         }
 
+        function dataValueToMoney(d) {
+            const val = d.toLocaleString()
+
+            return "$"+val+"m";
+        }
+
         function changeImage(category) {
             
             let source = "";
-            let prevSource = d3.select("img")
-            .attr("src");
+
             if (category === "Animals" || 
                 category === "Bovine" ||
                 category === "Swine" ||
@@ -225,7 +232,7 @@
             category === "Fresh or Chilled Fruit" ||
             category === "Bananas and Plantains" ||
             category === "Frozen Fruit" ||
-            category === "Prepared or Preserved fruit" ||
+            category === "Prepared or Preserved Fruit" ||
             category === "Fruit Juices"
             ) {
                 source = "images/fruit.png";
@@ -235,7 +242,7 @@
                     category === "Wheat and Products" ||
                     category === "Rice and Products" ||
                     category === "Milled Grain Products" ||
-                    category === "Cereal and Bakery foods"
+                    category === "Cereal and Bakery Foods"
             ) {
                 source = "images/grain.jpg";
             }
@@ -270,7 +277,7 @@
             ) {
                 source = "images/veg.jpg";
             }
-            else if (category ==="Vegetable Oil and Oilseeds" ||
+            else if (category === "Vegetable Oil and Oilseeds" ||
                     category === "Crude Vegetable Oils" ||
                     category === "Refined Vegetable Oils" ||
                     category === "Olive Oil" ||
@@ -288,29 +295,36 @@
                 source = "images/other.png";
             }
 
-
-            //if selecting within the same category, do nothing
+            //if going back home and not already at home
             if (category === "Imports") {
+                if (category !== lastCategory) {
+                    d3.select("img")
+                    .style('opacity', 1)
+                    .style('transform', 'scale(1)')
+                    .transition()
+                    .duration(750)
+                    .style('opacity', 0)
+                    .style('transform', 'scale(0)');
+                }
+
+                lastSource = "";
+            }   //if going to a different tab that's in a different category
+            else if (source !== lastSource) {
+                console.log("Changing to: " + source);
                 d3.select("img")
-                .style('opacity', 1)
-                .style('transform', 'scale(1)')
-                .transition()
-                .duration(750)
-                .style('opacity', 0)
-                .style('transform', 'scale(0)');
-            }
-            else if (source !== prevSource) {
-                d3.select("img")
-                .attr("src",source)
-                .style('opacity', 0)
-                .style('transform', 'scale(0)')
-                .transition()
-                .duration(750)
-                .style('opacity', 1)
-                .style('transform', 'scale(1)');
+                    .attr("src",source)
+                    .style('opacity', 0)
+                    .style('transform', 'scale(0)')
+                    .transition()
+                    .duration(750)
+                    .style('opacity', 1)
+                    .style('transform', 'scale(1)');
+                
+                lastSource = d3.select("img")
+                .attr("src");
             }
 
-
+            lastCategory = category;
             
         }
 
