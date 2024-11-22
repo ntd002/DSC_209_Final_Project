@@ -173,50 +173,133 @@
             let source = "";
             let prevSource = d3.select("img")
             .attr("src");
-            if (category === "Animals") {
+            if (category === "Animals" || 
+                category === "Bovine" ||
+                category === "Swine" ||
+                category === "Sheep and Goats" ||
+                category === "Poultry" ||
+                category === "Eggs") {
                 source = "images/animal.jpg";
             }
-            else if (category === "Beverages") {
+            else if (category === "Beverages" ||
+                    category === "Wine" ||
+                    category === "Malt Beer" ||
+                    category === "Nonalcoholic Beverages" ||
+                    category === "Liquors and Liqueurs"
+            ) {
                 source = "images/bev.jpg";
             }
-            else if (category === "Coffee, Tea, and Spices") {
+            else if (category === "Cocoa" ||
+                    category === "Cocoa Beans" ||
+                    category === "Cocoa Paste, Butter, and Powder" ||
+                    category === "Chocolate"
+            ) {
+                source = "images/choc.jpg";
+            }
+            else if (category === "Coffee, Tea, and Spices" ||
+                    category === "Coffee Beans, Unroasted" ||
+                    category === "Coffee, Roasted and Instant" ||
+                    category === "Coffee Extracts and Preparations" ||
+                    category === "Tea and Mate" ||
+                    category === "Spices"
+            ) {
                 source = "images/coffee.jpg";
             }
-            else if (category === "Dairy") {
+            else if (category === "Dairy" ||
+                    category === "Cheese, Fresh or Processed" ||
+                    category === "Yogurt, Buttermilk, or Whey" ||
+                    category === "Milk and Cream" ||
+                    category === "Butter or Spreads"
+            ) {
                 source = "images/dairy.jpg";
             }
-            else if (category === "Fish") {
+            else if (category === "Fish" ||
+                    category === "Whole Fish" ||
+                    category === "Fish Fillets and Mince" ||
+                    category === "Whole Shellfish" ||
+                    category === "Prepared Fish and Shellfish"
+            ) {
                 source = "images/fish.jpg";
             }
-            else if (category === "Fruit") {
+            else if (category === "Fruit" ||
+            category === "Fresh or Chilled Fruit" ||
+            category === "Bananas and Plantains" ||
+            category === "Frozen Fruit" ||
+            category === "Prepared or Preserved fruit" ||
+            category === "Fruit Juices"
+            ) {
                 source = "images/fruit.png";
             }
-            else if (category === "Grains") {
+            else if (category === "Grains" ||
+                    category === "Bulk Grains" ||
+                    category === "Wheat and Products" ||
+                    category === "Rice and Products" ||
+                    category === "Milled Grain Products" ||
+                    category === "Cereal and Bakery foods"
+            ) {
                 source = "images/grain.jpg";
             }
-            else if (category === "Meat" || category === "Fresh or Chilled Red Meat") {
+            else if (category === "Meat" || 
+                    category === "Fresh or Chilled Red Meat" ||
+                    category === "Frozen Red Meat and Parts" ||
+                    category === "Fowl and Other Meats" ||
+                    category === "Prepared Meats"
+            ) {
                 source = "images/meat.jpg";
             }
-            else if (category === "Nuts") {
+            else if (category === "Nuts" ||
+                    category === "Tree Nuts" ||
+                    category === "Cashew Nuts" ||
+                    category === "Prepared Tree Nuts" ||
+                    category === "Ground Nuts"
+            ) {
                 source = "images/nuts.jpg";
             }
-            else if (category === "Sweets") {
+            else if (category === "Sweets" ||
+                    category === "Sugar, Cane and Beet" ||
+                    category === "Other Sweeteners and Syrups" ||
+                    category === "Confections"
+            ) {
                 source = "images/sweet.jpg";
             }
-            else if (category === "Vegetables") {
+            else if (category === "Vegetables" ||
+            category === "Fresh Vegetables" ||
+            category === "Frozen Vegetables" ||
+            category === "Dried Vegetables" ||
+            category === "Prepared or Preserved Vegetables"
+            ) {
                 source = "images/veg.jpg";
             }
-            else if (category ==="Vegetable Oil and Oilseeds") {
+            else if (category ==="Vegetable Oil and Oilseeds" ||
+                    category === "Crude Vegetable Oils" ||
+                    category === "Refined Vegetable Oils" ||
+                    category === "Olive Oil" ||
+                    category === "Tropical Oils" ||
+                    category === "Oilseeds"
+            ) {
                 source = "images/oil.png";
             }
-            else if (category ==="Other") {
+            else if (category ==="Other" ||
+                    category === "Sauces, Soups, or Prepared Foods" ||
+                    category === "Essential Oils" ||
+                    category === "Animal and Other Fats" ||
+                    category === "Other Edible Products"
+            ) {
                 source = "images/other.png";
             }
-            //handle other main categories
 
 
             //if selecting within the same category, do nothing
-            if (source !== prevSource) {
+            if (category === "Imports") {
+                d3.select("img")
+                .style('opacity', 1)
+                .style('transform', 'scale(1)')
+                .transition()
+                .duration(750)
+                .style('opacity', 0)
+                .style('transform', 'scale(0)');
+            }
+            else if (source !== prevSource) {
                 d3.select("img")
                 .attr("src",source)
                 .style('opacity', 0)

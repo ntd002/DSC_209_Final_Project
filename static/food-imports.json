@@ -86,7 +86,7 @@
     ]
     },
     {
-    "name": "Liquors and Liquers",
+    "name": "Liquors and Liqueurs",
     "children": [
         {"name": "Mexico", "value": 4742},
         {"name": "France", "value": 1946},
