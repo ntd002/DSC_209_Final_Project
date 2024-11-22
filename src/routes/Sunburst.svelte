@@ -110,6 +110,7 @@
 
         const parent = svg.append("circle")
             .datum(root)
+            .attr("class","circle")
             .attr("r", radius)
             .attr("fill", "none")
             .attr("pointer-events", "all")
@@ -167,12 +168,23 @@
 
         return svg.node();
     }
+
+
 </script>
 
 <div bind:this={element}>	
-
+    <img src="images/meat.jpg" alt="Meat">
 </div>
 
 <style>
+
+    img {
+        position: absolute;
+        pointer-events: none;
+        border-radius: 50%;
+        width: 25%;
+        left: 37.5%;
+        top: 58%;
+    }
     
 </style>
