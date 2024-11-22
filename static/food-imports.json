@@ -364,7 +364,7 @@
       ]
      },
      {
-        "name": "Dried, Prepared, or Preserved Fruit",
+        "name": "Prepared or Preserved Fruit",
         "children": [
             {"name": "Mexico", "value": 843},
             {"name": "China ", "value": 472},
@@ -729,7 +729,7 @@
     "name": "Other",
     "children": [
      {
-      "name": "Sauces, Soups, and Prepared Foods",
+      "name": "Sauces, Soups, or Prepared Foods",
       "children": [
         {"name": "Singapore", "value": 3047},
         {"name": "Canada", "value": 1831},
