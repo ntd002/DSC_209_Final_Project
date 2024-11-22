@@ -150,6 +150,8 @@
             }).transition(t)
                 .attr("fill-opacity", d => +labelVisible(d.target))
                 .attrTween("transform", d => () => labelTransform(d.current));
+
+            changeImage(p["data"]["name"]);
         }
         
         function arcVisible(d) {
@@ -166,6 +168,69 @@
             return `rotate(${x - 90}) translate(${y},0) rotate(${x < 180 ? 0 : 180})`;
         }
 
+        function changeImage(category) {
+            
+            let source = "";
+            let prevSource = d3.select("img")
+            .attr("src");
+            if (category === "Animals") {
+                source = "images/animal.jpg";
+            }
+            else if (category === "Beverages") {
+                source = "images/bev.jpg";
+            }
+            else if (category === "Coffee, Tea, and Spices") {
+                source = "images/coffee.jpg";
+            }
+            else if (category === "Dairy") {
+                source = "images/dairy.jpg";
+            }
+            else if (category === "Fish") {
+                source = "images/fish.jpg";
+            }
+            else if (category === "Fruit") {
+                source = "images/fruit.png";
+            }
+            else if (category === "Grains") {
+                source = "images/grain.jpg";
+            }
+            else if (category === "Meat" || category === "Fresh or Chilled Red Meat") {
+                source = "images/meat.jpg";
+            }
+            else if (category === "Nuts") {
+                source = "images/nuts.jpg";
+            }
+            else if (category === "Sweets") {
+                source = "images/sweet.jpg";
+            }
+            else if (category === "Vegetables") {
+                source = "images/veg.jpg";
+            }
+            else if (category ==="Vegetable Oil and Oilseeds") {
+                source = "images/oil.png";
+            }
+            else if (category ==="Other") {
+                source = "images/other.png";
+            }
+            //handle other main categories
+
+
+            //if selecting within the same category, do nothing
+            if (source !== prevSource) {
+                d3.select("img")
+                .attr("src",source)
+                .style('opacity', 0)
+                .style('transform', 'scale(0)')
+                .transition()
+                .duration(750)
+                .style('opacity', 1)
+                .style('transform', 'scale(1)');
+            }
+
+
+            
+        }
+
         return svg.node();
     }
 
@@ -173,7 +238,7 @@
 </script>
 
 <div bind:this={element}>	
-    <img src="images/meat.jpg" alt="Meat">
+    <img>
 </div>
 
 <style>
@@ -184,7 +249,7 @@
         border-radius: 50%;
         width: 25%;
         left: 37.5%;
-        top: 58%;
+        top: 89%;
     }
     
 </style>
