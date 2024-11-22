@@ -724,6 +724,67 @@
       ]
      }
     ]
+   },
+   {
+    "name": "Other",
+    "children": [
+     {
+      "name": "Sauces, Soups, and Prepared Foods",
+      "children": [
+        {"name": "Singapore", "value": 3047},
+        {"name": "Canada", "value": 1831},
+        {"name": "Italy", "value": 782},
+        {"name": "Mexico", "value": 750},
+        {"name": "China ", "value": 538},
+        {"name": "Thailand", "value": 308},
+        {"name": "Germany", "value": 219},
+        {"name": "South Korea", "value": 214},
+        {"name": "Rest of world", "value": 2445}
+      ]
+     },
+     {
+      "name": "Essential Oils",
+      "children": [
+        {"name": "Ireland", "value": 3509},
+        {"name": "Brazil", "value": 202},
+        {"name": "Mexico", "value": 200},
+        {"name": "India", "value": 180},
+        {"name": "France", "value": 107},
+        {"name": "Canada", "value": 99},
+        {"name": "Italy", "value": 78},
+        {"name": "China ", "value": 63},
+        {"name": "Rest of world", "value": 481}
+      ]
+     },
+     {
+        "name": "Animal and Other Fats",
+        "children": [
+            {"name": "Canada", "value": 583},
+            {"name": "Australia", "value": 313},
+            {"name": "Brazil", "value": 246},
+            {"name": "Mexico", "value": 107},
+            {"name": "Vietnam", "value": 103},
+            {"name": "Uruguay", "value": 93},
+            {"name": "Argentina", "value": 88},
+            {"name": "Norway", "value": 87},
+            {"name": "Rest of world", "value": 394}
+      ]
+     },
+     {
+        "name": "Other Edible Products",
+        "children": [
+            {"name": "India", "value": 443},
+            {"name": "China ", "value": 396},
+            {"name": "Canada", "value": 217},
+            {"name": "Mexico", "value": 186},
+            {"name": "France", "value": 180},
+            {"name": "Spain", "value": 115},
+            {"name": "Italy", "value": 100},
+            {"name": "Germany", "value": 87},
+            {"name": "Rest of world", "value": 602}
+      ]
+     }
+    ]
    }
  ]
 }
