@@ -207,6 +207,61 @@
       ]
      }
     ]
+   },
+   {
+    "name": "Dairy",
+    "children": [
+     {
+      "name": "Cheese, Fresh or Processed",
+      "children": [
+        {"name": "Italy", "value": 470},
+        {"name": "France", "value": 203},
+        {"name": "Spain", "value": 145},
+        {"name": "Netherlands", "value": 130},
+        {"name": "Switzerland", "value": 118},
+        {"name": "Ireland", "value": 88},
+        {"name": "United Kingdom", "value": 76},
+        {"name": "Rest of world", "value": 526}
+      ]
+     },
+     {
+      "name": "Yogurt, Buttermilk, or Whey",
+      "children": [
+        {"name": "New Zealand", "value": 292},
+        {"name": "Canada", "value": 113},
+        {"name": "France", "value": 46},
+        {"name": "Denmark", "value": 28},
+        {"name": "Germany", "value": 23},
+        {"name": "Mexico", "value": 8},
+        {"name": "Chile", "value": 5},
+        {"name": "Rest of world", "value": 10}
+      ]
+     },
+     {
+        "name": "Milk and Cream",
+        "children": [
+            {"name": "Mexico", "value": 101},
+            {"name": "Chile", "value": 39},
+            {"name": "Netherlands", "value": 23},
+            {"name": "Canada", "value": 16},
+            {"name": "New Zealand", "value": 11},
+            {"name": "Peru", "value": 6},
+            {"name": "Rest of world", "value": 24}
+      ]
+     },
+     {
+        "name": "Butter or Spreads",
+        "children": [
+            {"name": "Ireland", "value": 345},
+            {"name": "New Zealand", "value": 94},
+            {"name": "Mexico", "value": 45},
+            {"name": "France", "value": 25},
+            {"name": "India", "value": 12},
+            {"name": "Chile", "value": 3},
+            {"name": "Rest of world", "value": 18}
+      ]
+     }
+    ]
    }
  ]
 }
