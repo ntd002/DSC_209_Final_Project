@@ -507,6 +507,63 @@
       ]
      }
     ]
+   },
+   {
+    "name": "Nuts",
+    "children": [
+     {
+      "name": "Tree Nuts",
+      "children": [
+        {"name": "Vietnam", "value": 729},
+        {"name": "Mexico", "value": 572},
+        {"name": "Philippines", "value": 55},
+        {"name": "China ", "value": 50},
+        {"name": "South Africa", "value": 44},
+        {"name": "Brazil", "value": 37},
+        {"name": "Thailand", "value": 34},
+        {"name": "Cote d'Ivoire", "value": 34},
+        {"name": "Kenya", "value": 19},
+        {"name": "Rest of world", "value": 162}
+      ]
+     },
+     {
+      "name": "Cashew Nuts",
+      "children": [
+        {"name": "Vietnam", "value": 723},
+        {"name": "Cote d'Ivoire", "value": 34},
+        {"name": "Brazil", "value": 25},
+        {"name": "Thailand", "value": 10},
+        {"name": "Nigeria", "value": 7},
+        {"name": "India", "value": 7},
+        {"name": "Benin", "value": 3},
+        {"name": "Rest of world", "value": 8}
+      ]
+     },
+     {
+        "name": "Prepared Tree Nuts",
+        "children": [
+            {"name": "Vietnam", "value": 224},
+            {"name": "Thailand", "value": 88},
+            {"name": "Canada", "value": 74},
+            {"name": "Mexico", "value": 51},
+            {"name": "India", "value": 27},
+            {"name": "Turkey", "value": 26},
+            {"name": "Israel", "value": 22},
+            {"name": "Rest of world", "value": 119}
+      ]
+     },
+     {
+        "name": "Ground Nuts",
+        "children": [
+            {"name": "Mexico", "value": 67},
+            {"name": "Canada", "value": 55},
+            {"name": "Argentina", "value": 14},
+            {"name": "India", "value": 5},
+            {"name": "Paraguay", "value": 4},
+            {"name": "Rest of world", "value": 10}
+      ]
+     }
+    ]
    }
  ]
 }
