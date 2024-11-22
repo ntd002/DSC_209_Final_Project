@@ -102,7 +102,7 @@
    ]
   },
   {
-    "name": "Chocolate",
+    "name": "Cocoa",
     "children": [
      {
       "name": "Cocoa Beans",
@@ -144,6 +144,68 @@
             {"name": "Rest of world", "value": 570}
         ]
        }
+    ]
+   },
+   {
+    "name": "Coffee, Tea, and Spices",
+    "children": [
+     {
+      "name": "Coffee Beans, Unroasted",
+      "children": [
+        {"name": "Brazil", "value": 1348},
+        {"name": "Colombia", "value": 1312},
+        {"name": "Honduras", "value": 462},
+        {"name": "Guatemala", "value": 457},
+        {"name": "Nicaragua", "value": 359},
+        {"name": "Vietnam", "value": 344},
+        {"name": "Rest of world", "value": 1644}
+      ]
+     },
+     {
+      "name": "Coffee, Roasted and Instant",
+      "children": [
+        {"name": "Switzerland", "value": 1120},
+        {"name": "Canada", "value": 564},
+        {"name": "Italy", "value": 136},
+        {"name": "Colombia", "value": 68},
+        {"name": "Mexico", "value": 51},
+        {"name": "Rest of world", "value": 134}
+      ]
+     },
+     {
+        "name": "Coffee Extracts and Preparations",
+        "children": [
+            {"name": "Mexico", "value": 191},
+            {"name": "Colombia", "value": 172},
+            {"name": "Brazil", "value": 149},
+            {"name": "India", "value": 55},
+            {"name": "Rest of world", "value": 211}
+      ]
+     },
+     {
+        "name": "Tea and Mate",
+        "children": [
+            {"name": "Japan", "value": 108},
+            {"name": "China ", "value": 98},
+            {"name": "Canada", "value": 92},
+            {"name": "India", "value": 72},
+            {"name": "Rest of world", "value": 371}
+      ]
+     },
+     {
+        "name": "Spices",
+        "children": [
+            {"name": "India", "value": 304},
+            {"name": "Vietnam", "value": 299},
+            {"name": "China ", "value": 166},
+            {"name": "Madagascar ", "value": 151},
+            {"name": "Mexico", "value": 139},
+            {"name": "Spain", "value": 134},
+            {"name": "Peru", "value": 124},
+            {"name": "Indonesia", "value": 117},
+            {"name": "Rest of world", "value": 327}
+      ]
+     }
     ]
    }
  ]
