@@ -319,6 +319,77 @@
       ]
      }
     ]
+   },
+   {
+    "name": "Fruit",
+    "children": [
+     {
+      "name": "Fresh or Chilled Fruit",
+      "children": [
+        {"name": "Mexico", "value": 9619},
+        {"name": "Peru", "value": 2287},
+        {"name": "Chile", "value": 1589},
+        {"name": "Guatemala", "value": 1431},
+        {"name": "Costa Rica", "value": 1141},
+        {"name": "Ecuador", "value": 558},
+        {"name": "Honduras", "value": 388},
+        {"name": "Colombia", "value": 375},
+        {"name": "Canada", "value": 284},
+        {"name": "South Africa", "value": 178},
+        {"name": "Rest of world", "value": 1133}
+      ]
+     },
+     {
+      "name": "Bananas and Plantains",
+      "children": [
+        {"name": "Guatemala", "value": 1083},
+        {"name": "Ecuador", "value": 449},
+        {"name": "Costa Rica", "value": 434},
+        {"name": "Colombia", "value": 262},
+        {"name": "Honduras", "value": 229},
+        {"name": "Mexico", "value": 200},
+        {"name": "Rest of world", "value": 66}
+      ]
+     },
+     {
+        "name": "Frozen Fruit",
+        "children": [
+            {"name": "Mexico", "value": 328},
+            {"name": "Canada", "value": 298},
+            {"name": "Chile", "value": 204},
+            {"name": "Peru", "value": 97},
+            {"name": "Guatemala", "value": 70},
+            {"name": "Costa Rica", "value": 52},
+            {"name": "Rest of world", "value": 232}
+      ]
+     },
+     {
+        "name": "Dried, Prepared, or Preserved Fruit",
+        "children": [
+            {"name": "Mexico", "value": 843},
+            {"name": "China ", "value": 472},
+            {"name": "Canada", "value": 409},
+            {"name": "Thailand", "value": 314},
+            {"name": "South Korea", "value": 219},
+            {"name": "Chile", "value": 171},
+            {"name": "Rest of world", "value": 1765}
+      ]
+     },
+     {
+        "name": "Fruit Juices",
+        "children": [
+            {"name": "Brazil", "value": 832},
+            {"name": "Mexico", "value": 469},
+            {"name": "Turkey", "value": 302},
+            {"name": "Thailand", "value": 207},
+            {"name": "Philippines", "value": 124},
+            {"name": "Canada", "value": 117},
+            {"name": "Argentina", "value": 113},
+            {"name": "China ", "value": 97},
+            {"name": "Rest of world", "value": 921}
+      ]
+     }
+    ]
    }
  ]
 }
