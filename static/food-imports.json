@@ -262,6 +262,63 @@
       ]
      }
     ]
+   },
+   {
+    "name": "Fish",
+    "children": [
+     {
+      "name": "Whole Fish--Fresh, Chilled, or Frozen",
+      "children": [
+        {"name": "Canada", "value": 815},
+        {"name": "Norway", "value": 317},
+        {"name": "Chile", "value": 205},
+        {"name": "Mexico", "value": 203},
+        {"name": "Faroe Islands", "value": 145},
+        {"name": "China ", "value": 137},
+        {"name": "Rest of world", "value": 1477}
+      ]
+     },
+     {
+      "name": "Fish Fillets and Mince",
+      "children": [
+        {"name": "Chile", "value": 2889},
+        {"name": "China ", "value": 979},
+        {"name": "Norway", "value": 953},
+        {"name": "Vietnam", "value": 521},
+        {"name": "Indonesia", "value": 374},
+        {"name": "Canada", "value": 282},
+        {"name": "Rest of world", "value": 1915}
+      ]
+     },
+     {
+        "name": "Shellfish, Fresh or Frozen",
+        "children": [
+            {"name": "Canada", "value": 1948},
+            {"name": "India", "value": 1913},
+            {"name": "Ecuador", "value": 1319},
+            {"name": "Indonesia", "value": 757},
+            {"name": "Vietnam", "value": 297},
+            {"name": "Argentina", "value": 290},
+            {"name": "Mexico", "value": 265},
+            {"name": "Japan", "value": 169},
+            {"name": "Rest of world", "value": 1200}
+      ]
+     },
+     {
+        "name": "Prepared Fish and Shellfish",
+        "children": [
+            {"name": "Thailand", "value": 891},
+            {"name": "Indonesia", "value": 848},
+            {"name": "Vietnam", "value": 642},
+            {"name": "India", "value": 596},
+            {"name": "Canada", "value": 504},
+            {"name": "China ", "value": 297},
+            {"name": "Ecuador", "value": 229},
+            {"name": "Mexico", "value": 122},
+            {"name": "Rest of world", "value": 1351}
+      ]
+     }
+    ]
    }
  ]
 }
