@@ -608,6 +608,58 @@
       ]
      }
     ]
+   },
+   {
+    "name": "Vegetables",
+    "children": [
+     {
+      "name": "Fresh Vegetables",
+      "children": [
+        {"name": "Mexico", "value": 8491},
+        {"name": "Canada", "value": 2477},
+        {"name": "Peru", "value": 345},
+        {"name": "Guatemala", "value": 224},
+        {"name": "Costa Rica", "value": 167},
+        {"name": "China ", "value": 143},
+        {"name": "Rest of world", "value": 546}
+      ]
+     },
+     {
+      "name": "Frozen Vegetables",
+      "children": [
+        {"name": "Mexico", "value": 655},
+        {"name": "Canada", "value": 160},
+        {"name": "Guatemala", "value": 75},
+        {"name": "China ", "value": 71},
+        {"name": "Ecuador", "value": 66},
+        {"name": "Belgium", "value": 56},
+        {"name": "Rest of world", "value": 261}
+      ]
+     },
+     {
+        "name": "Dried Vegetables",
+        "children": [
+            {"name": "Canada", "value": 358},
+            {"name": "China ", "value": 110},
+            {"name": "India", "value": 67},
+            {"name": "Mexico", "value": 50},
+            {"name": "Nicaragua", "value": 42},
+            {"name": "Rest of world", "value": 260}
+      ]
+     },
+     {
+        "name": "Prepared or Preserved Vegetables",
+        "children": [
+            {"name": "Canada", "value": 2064},
+            {"name": "Mexico", "value": 653},
+            {"name": "Spain", "value": 276},
+            {"name": "Belgium", "value": 256},
+            {"name": "Peru", "value": 224},
+            {"name": "China ", "value": 206},
+            {"name": "Rest of world", "value": 1563}
+      ]
+     }
+    ]
    }
  ]
 }
