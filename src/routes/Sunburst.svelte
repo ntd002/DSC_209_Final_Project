@@ -70,7 +70,7 @@
         // Create the SVG container.
         const svg = d3.create("svg")
             .attr("viewBox", [-width / 2, -height / 2, width, width])
-            .style("font", "10px sans-serif");
+            .style("font", "9px sans-serif");
 
         // Append the arcs.
         const path = svg.append("g")
@@ -101,7 +101,7 @@
             .selectAll("text")
             .data(root.descendants().slice(1))
             .join("text")
-            .attr("dy", "0.3em")
+            .attr("dy", "0.35em")
             .attr("fill-opacity", d => +labelVisible(d.current))
             .attr("transform", d => labelTransform(d.current))
             .text(d => d.data.name + 
