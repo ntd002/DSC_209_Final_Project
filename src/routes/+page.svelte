@@ -3,7 +3,7 @@
 </script>
 
 <main>
-<h1>Zoomable Sunburst Chart</h1>
+<h1>Imported Food in the United States of America</h1>
 <Sunburst />
 </main>
 
