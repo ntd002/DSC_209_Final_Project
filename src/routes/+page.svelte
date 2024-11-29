@@ -10,6 +10,7 @@
     This chart displays how much the United States of America spends on imported foods.<br />
     <b>1.</b> Select a petal to zoom into your desired category. (You can even click on a subcategory!)<br />
     <b>2.</b> Select the center to zoom out of the subcategory.<br />
+    <b>3.</b> Hover a wedge to see a subtotal of the subcategories.<br />
 </p>
 <h2>Writeup</h2>
 <p><b>1. What have you done so far?</b> I have created a zoomable sunburst chart regarding how much the U.S.A. spends on importing food products. 

@@ -9,7 +9,7 @@
     onMount(async function() {
             //grab json data
 		let data = await d3.json('https://raw.githubusercontent.com/ntd002/DSC_209_Final_Project/refs/heads/main/static/food-imports.json');
-		
+
 		let chart = Sunburst(data, {
 			value: d => d.value, // size of each node (file); null for internal nodes (folders)
 			label: d => d.name, // display name for each cell
@@ -17,7 +17,7 @@
             width: 1152,
 			height: 1152
 		});
-		
+
 		d3.select(element).append(() => chart);
 	});
 
@@ -106,7 +106,7 @@
             .attr("dy", "0.35em")
             .attr("fill-opacity", d => +labelVisible(d.current))
             .attr("transform", d => labelTransform(d.current))
-            .text(d => d.data.name + 
+            .text(d => d.data.name +
 
             (typeof d.data.value==='undefined' ? '' : ": "+ dataValueToMoney(d.data.value)));
 
@@ -143,7 +143,7 @@
                 return +this.getAttribute("fill-opacity") || arcVisible(d.target);
             })
                 .attr("fill-opacity", d => arcVisible(d.target) ? (d.children ? 0.6 : 0.4) : 0)
-                .attr("pointer-events", d => arcVisible(d.target) ? "auto" : "none") 
+                .attr("pointer-events", d => arcVisible(d.target) ? "auto" : "none")
 
                 .attrTween("d", d => () => arc(d.current));
 
@@ -155,7 +155,7 @@
 
             changeImage(p["data"]["name"]);
         }
-        
+
         function arcVisible(d) {
             return d.y1 <= 3 && d.y0 >= 1 && d.x1 > d.x0;
         }
@@ -177,10 +177,10 @@
         }
 
         function changeImage(category) {
-            
+
             let source = "";
 
-            if (category === "Animals" || 
+            if (category === "Animals" ||
                 category === "Bovine" ||
                 category === "Swine" ||
                 category === "Sheep and Goats" ||
@@ -246,7 +246,7 @@
             ) {
                 source = "images/grain.jpg";
             }
-            else if (category === "Meat" || 
+            else if (category === "Meat" ||
                     category === "Fresh or Chilled Red Meat" ||
                     category === "Frozen Red Meat and Parts" ||
                     category === "Fowl and Other Meats" ||
@@ -319,13 +319,13 @@
                     .duration(750)
                     .style('opacity', 1)
                     .style('transform', 'scale(1)');
-                
+
                 lastSource = d3.select("img")
                 .attr("src");
             }
 
             lastCategory = category;
-            
+
         }
 
         return svg.node();
@@ -334,22 +334,24 @@
 
 </script>
 
-<div bind:this={element}>	
+<div bind:this={element}>
     <img>
 </div>
 
 <style>
+    div {
+        position: relative;
+        display: grid;
+        place-items: center; 
+        text-align:center;
+    }
 
     img {
         position: absolute;
+        margin: auto;
         pointer-events: none;
         border-radius: 50%;
         width: 25%;
-        left: 37.5%;
-        /*For Official*/
-        top: 88%;
-        /*For Personal*/
-        /* top: 89%; */
     }
-    
+
 </style>
