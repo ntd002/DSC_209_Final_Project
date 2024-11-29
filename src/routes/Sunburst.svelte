@@ -346,7 +346,10 @@
         border-radius: 50%;
         width: 25%;
         left: 37.5%;
-        top: 89%;
+        /*For Official*/
+        top: 88%;
+        /*For Personal*/
+        /* top: 89%; */
     }
     
 </style>

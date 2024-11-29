@@ -37,4 +37,8 @@
         text-align: center;
         padding: 20px;
     }
+
+    h1, h2, p {
+        font-family: Arial, Helvetica, sans-serif;
+    }
 </style>
