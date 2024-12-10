@@ -88,11 +88,15 @@
         padding-bottom: 5px;
         border-radius: 25px;
         background-color:#88B8ED;
+        margin: 15px auto;
+        width: 70%;
     }
 
     p {
-        padding: 25px;
+        padding: 10px 25px;
         border-radius: 25px;
         background-color:#A88CCC;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 </style>
