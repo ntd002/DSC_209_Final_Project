@@ -116,6 +116,7 @@
             .attr("r", radius)
             .attr("fill", "none")
             .attr("pointer-events", "all")
+            .style("cursor", "pointer")
             .on("click", clicked);
 
         // Handle zoom on click.
