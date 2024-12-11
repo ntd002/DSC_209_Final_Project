@@ -9,7 +9,7 @@
 <h2>Welcome to a Zoomable Sunburst Chart!</h2>
 <p>
     This chart displays how much the United States of America spends on imported foods.<br />
-    <b>1.</b> Select a petal to zoom into your desired category. (You can even click on a sub-category!)<br />
+    <b>1.</b> Select a wedge to zoom into your desired category. (You can even click on a sub-category!)<br />
     <b>2.</b> Select the center to zoom out of the sub-category.<br />
     <b>3.</b> Hover a wedge to see a subtotal of the sub-categories.<br />
 </p>
